@@ -25,12 +25,6 @@ app.config['SECRET_KEY'] = '12345'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost:5432' 
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 db = SQLAlchemy(app)
-bcrypt = Bcrypt(app)
-login_manager = LoginManager(app)
-login_manager.login_view = 'login'
-
-# app.config['UPLOADED_SCRIPTFILE_DEST'] = os.path.join(BASEDIR, 'scripts')
-# configure_uploads(app, script_file)
 
 # Mail Configuration
 app.config['DEBUG'] = True
